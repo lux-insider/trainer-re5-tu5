@@ -1,0 +1,73 @@
+TRAINER RE5 TU5 (Xbox 360)
+==========================
+Trainer para o Resident Evil 5 com a TU5 (como a sua versão traduzida),
+para console com RGH/JTAG. Feito com conferências para não travar o jogo.
+
+ARQUIVOS (em saida/)
+  RE5 Trainer Loader.xex   abre pelo Aurora
+  re5trainer.xex           o trainer (o loader procura na mesma pasta)
+
+COMO USAR
+  1. Copie os dois arquivos para a mesma pasta no console, por exemplo
+     Hdd1:\Trainers\RE5\
+  2. Abra o "RE5 Trainer Loader.xex" pelo Aurora. Aparece a notificação
+     "Trainer RE5 TU5 by @lux-insider carregado" e o console volta ao Aurora.
+     Também dá para abrir o loader pelo gerenciador de arquivos do Aurora.
+  3. Abra o Resident Evil 5 sem desligar o console.
+  4. Ao entrar no jogo aparece "Trainer RE5 by @lux-insider ativo".
+     Segure CIMA (direcional) + START juntos no controle 1 por 1 ou 2
+     segundos: aparece "Trainer RE5: abrindo..." e abre a caixa
+     "Trainer RE5 TU5 by @lux-insider". Digite o código de 4 botões nela.
+
+   Vida infinita ................ RT RT RT RT
+   Munição infinita ............. LT LT LT LT
+   Granadas infinitas ........... RB RB RB RB
+   Minas infinitas .............. X X X X
+   Dinheiro infinito ............ LB LB LB LB
+   Pontos do Mercenaries ........ Y Y Y Y
+   Pontos das DLCs .............. LB RB LB RB
+   Relógio parado ............... LT RT LT RT
+   Todas as trapaças ............ CIMA x4
+   Lista de códigos ............. BAIXO x4 (mostra quais estão ligadas)
+
+   O mesmo código liga e desliga. Uns 2 segundos depois aparece o aviso
+   "...: LIGADA" ou "DESLIGADA", e o controle vibra: uma vibração longa =
+   ligada, duas curtas = desligada. B fecha a caixa sem fazer nada.
+
+O QUE ELE CONFERE ANTES DE GRAVAR
+  - Que o jogo aberto é o Resident Evil 5 (Title ID 434307D4). Fora do RE5
+    (Aurora ou outro jogo) o CIMA + START não faz nada.
+  - Que as 12 instruções do jogo estão exatamente como na TU5. Se uma não
+    bater (outra versão do jogo), não grava nada e avisa.
+  - Cada trapaça é lida da própria memória do jogo, então nunca fica
+    invertida, e cada gravação é conferida lendo de volta. Se uma falhar,
+    a trapaça volta ao original.
+  - Não grava em endereços fixos de dados, não mexe em arquivos, saves,
+    rede, NAND nem kv.bin.
+
+MENSAGENS
+  "versão do jogo não reconhecida"  o executável não é a TU5 esperada
+  "a gravação falhou e foi desfeita"  a memória recusou; nada mudou
+  "o jogo não confere"              o jogo mudou enquanto a caixa estava aberta
+  "código desconhecido"             BAIXO x4 mostra a lista
+
+CUIDADOS
+  - Use jogando sozinho ou offline.
+  - Desligar o console tira o trainer da memória: abra o loader de novo.
+  - Abrir o loader duas vezes não carrega duas cópias.
+  - Os avisos no canto da tela precisam do JRPC2 carregado pelo DashLaunch
+    (plugin no launch.ini). Sem ele as trapaças funcionam igual e a
+    vibração mostra o estado.
+  - Para trocar o trainer por uma versão nova, tire o console da tomada:
+    o trainer antigo fica na memória até desligar de verdade.
+
+COMPILAR
+  XDK=/caminho/do/XDK ./compilar.sh   (XDK 21256, pelo Wine)
+  O trainer é uma DLL de sistema em 0x91500000 (o original usa 0x91220000,
+  mas o nosso é maior e lá ele invadiria 0x91240000, já usado no console).
+  O script marca o PE com páginas de 4 KB (ferramentas/alinha4k.py) para o
+  imagexex aceitar essa região, e grava as mesmas permissões do original
+  (ferramentas/flags_imagem.py). A gravação é direta na memória do jogo,
+  protegida contra falha, porque o xbdm do console não oferece funções a
+  outros programas. Se o loader não conseguir carregar, ele
+  mostra o código do erro e as áreas livres da região de plugins.

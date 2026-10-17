@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!-- DLL de sistema na região de plugins (páginas de 4 KB), numa área livre medida no console -->
+<xex>
+  <sysdll/>
+  <baseaddr addr="0x91500000"/>
+  <!-- abre do pendrive e do HD, como o original -->
+  <mediatypes>
+    <harddisk/>
+    <usbmass/>
+    <flash/>
+    <network/>
+    <ram/>
+    <svod/>
+    <dvdx2/>
+    <allpackages/>
+  </mediatypes>
+</xex>
