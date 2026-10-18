@@ -1,6 +1,6 @@
 TRAINER RE5 TU5 (Xbox 360)
 ==========================
-Trainer para o Resident Evil 5 com a TU5 (como a sua versão traduzida),
+Trainer para o Resident Evil 5 com a TU5 (Title Update 5),
 para console com RGH/JTAG. Feito com conferências para não travar o jogo.
 
 ARQUIVOS (em saida/)
