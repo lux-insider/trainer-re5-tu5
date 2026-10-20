@@ -58,6 +58,11 @@ No console, com o jogo pausado:
 |---|---|
 | ![Caixa para digitar o código de 4 botões](docs/prints/caixa-codigo.png) | ![Lista dos códigos do trainer](docs/prints/lista-codigos.png) |
 
+![Jill e Josh na DLC Fuga Desesperada](docs/prints/fuga-desesperada.jpg)
+
+*O trainer também funciona nas DLCs: aqui, rodando na Fuga Desesperada
+(Desperate Escape), com a Jill e o Josh.*
+
 ---
 
 ## Requisitos
