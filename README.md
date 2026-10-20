@@ -14,6 +14,7 @@ instrução que vai alterar, para não travar o jogo.
 ## Sumário
 
 - [Trapaças](#trapaças)
+- [Capturas de tela](#capturas-de-tela)
 - [Requisitos](#requisitos)
 - [Instalação e uso](#instalação-e-uso)
 - [Segurança](#segurança)
@@ -46,6 +47,16 @@ de 4 botões.
 O mesmo código liga e desliga. A confirmação aparece no canto da tela
 ("...: LIGADA" ou "DESLIGADA") e no controle: **uma vibração longa = ligada**,
 **duas curtas = desligada**. **B** fecha a caixa sem fazer nada.
+
+---
+
+## Capturas de tela
+
+No console, com o jogo pausado:
+
+| Caixa do código | Lista dos códigos (BAIXO ×4) |
+|---|---|
+| ![Caixa para digitar o código de 4 botões](docs/prints/caixa-codigo.png) | ![Lista dos códigos do trainer](docs/prints/lista-codigos.png) |
 
 ---
 
@@ -132,6 +143,7 @@ ferramentas/
 └── xex_info.py         mostra base, tamanho e flags de um XEX
 compilar.sh             compilação completa pelo Wine
 LEIA-ME.txt             guia rápido que vai no pacote
+docs/                   funcionamento interno e capturas de tela
 ```
 
 ---
