@@ -2,7 +2,8 @@
 
 [![Versão](https://img.shields.io/github/v/release/lux-insider/trainer-re5-tu5?label=vers%C3%A3o)](https://github.com/lux-insider/trainer-re5-tu5/releases/latest)
 [![Licença: MIT](https://img.shields.io/badge/licen%C3%A7a-MIT-blue)](LICENSE)
-![Plataforma](https://img.shields.io/badge/plataforma-Xbox%20360%20(RGH%2FJTAG)-green)
+![Xbox 360](https://img.shields.io/badge/Xbox%20360-RGH%20%2F%20JTAG-107C10?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAuNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIuMiIvPjxwYXRoIGQ9Ik02LjMgNS44QzkuNiA4LjQgMTMuNCAxMi42IDE3LjQgMTguNk0xNy43IDUuOEMxNC40IDguNCAxMC42IDEyLjYgNi42IDE4LjYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyLjYiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjwvc3ZnPg%3D%3D)
+![C++](https://img.shields.io/badge/feito%20em-C%2B%2B-blue)
 
 Trainer para o **Resident Evil 5** de **Xbox 360** com a **Title Update 5
 (TU5)**, para console desbloqueado (RGH/JTAG). Escrito do zero, com
@@ -21,6 +22,7 @@ instrução que vai alterar, para não travar o jogo.
 - [Compilação](#compilação)
 - [Estrutura do projeto](#estrutura-do-projeto)
 - [Documentação](#documentação)
+- [Contribuir](#contribuir)
 - [Licença](#licença)
 
 ---
@@ -159,6 +161,15 @@ docs/                   funcionamento interno e capturas de tela
 |---|---|
 | [CHANGELOG.md](CHANGELOG.md) | histórico de versões |
 | [docs/COMO-FUNCIONA.md](docs/COMO-FUNCIONA.md) | carregamento, trapaças e conferências |
+
+---
+
+## Contribuir
+
+Erros e ideias são bem-vindos nas [issues](https://github.com/lux-insider/trainer-re5-tu5/issues/new/choose),
+com um modelo para cada caso. Para enviar código, veja o
+[CONTRIBUTING.md](CONTRIBUTING.md); para falhas de segurança, o
+[SECURITY.md](SECURITY.md).
 
 ---
 

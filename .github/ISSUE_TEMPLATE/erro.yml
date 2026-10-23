@@ -1,0 +1,67 @@
+name: Relatar um erro
+description: Algo não funcionou como deveria.
+title: "[Erro] "
+labels: ["erro"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por avisar! Antes de abrir, confira se o erro acontece na
+        [versão mais recente](../releases/latest).
+
+  - type: input
+    id: versao
+    attributes:
+      label: Versão do trainer
+      placeholder: "ex.: 1.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: console
+    attributes:
+      label: Console
+      options:
+        - RGH
+        - JTAG
+        - Outro
+    validations:
+      required: true
+  - type: input
+    id: dashboard
+    attributes:
+      label: Dashboard e plugins
+      description: Aurora, FSD ou outro, e os plugins carregados pelo DashLaunch.
+      placeholder: "ex.: Aurora 0.7b, JRPC2"
+  - type: checkboxes
+    id: tu
+    attributes:
+      label: Atualização do jogo
+      options:
+        - label: O jogo está na Title Update 5 (TU5).
+          required: true
+
+  - type: textarea
+    id: aconteceu
+    attributes:
+      label: O que aconteceu
+      description: Descreva o erro e a mensagem que apareceu, se houver.
+    validations:
+      required: true
+  - type: textarea
+    id: passos
+    attributes:
+      label: Como repetir
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+  - type: textarea
+    id: esperado
+    attributes:
+      label: O que você esperava
+
+  - type: textarea
+    id: anexos
+    attributes:
+      label: Prints e arquivos
+      description: "Prints ajudam muito."
