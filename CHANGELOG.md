@@ -10,6 +10,18 @@
 
 Primeira versão.
 
+### Correções depois do lançamento
+As correções entram na própria versão (o download da release é atualizado).
+
+- **30/10 — Última granada e última mina:** com a trapaça ligada, a conta
+  parava, mas o jogo ainda calculava "quantidade − 1" e apagava o item da
+  maleta quando dava 0. Quem tinha só 1 granada de um tipo (luz, fogo ou
+  explosão) ou só 1 mina perdia o item no primeiro arremesso. Agora a
+  trapaça também desliga essa remoção. O trainer confere 14 instruções da
+  TU5 (eram 12).
+- **30/10 — Compilação sem o caminho da máquina:** os `.xex` levam só o
+  nome do arquivo de depuração, não mais a pasta de quem compilou.
+
 ### Adicionado
 - Caixa de código aberta com **CIMA + START** durante a partida.
 - 8 trapaças: vida, munição, granadas, minas e dinheiro infinitos, pontos do
@@ -21,7 +33,7 @@ Primeira versão.
 
 ### Segurança
 - Só age com o Resident Evil 5 aberto (Title ID `434307D4`).
-- Confere as 12 instruções da TU5 antes de gravar; com outra versão do jogo,
+- Confere as instruções da TU5 antes de gravar; com outra versão do jogo,
   não grava nada.
 - Cada gravação é lida de volta; se falhar, a trapaça volta ao original.
 - Gravações protegidas contra falha de acesso à memória.

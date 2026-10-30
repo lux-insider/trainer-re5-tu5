@@ -102,7 +102,7 @@ versão nova, desligue o console da tomada antes de abrir o loader de novo.
 
 - **Só age no Resident Evil 5.** No Aurora ou em outro jogo, CIMA + START não
   faz nada.
-- **Confere a versão do jogo:** antes de gravar, verifica que as 12
+- **Confere a versão do jogo:** antes de gravar, verifica que as 14
   instruções alteradas estão exatamente como na TU5. Se uma não bater, não
   grava nada e avisa.
 - **Estado sempre correto:** cada trapaça é lida da própria memória do jogo,
